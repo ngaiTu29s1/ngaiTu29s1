@@ -34,6 +34,8 @@ As a third-year Electronics & Telecommunications student at HUST, I'm driven by 
 ---
 
 ## Let's build the future — one script, one system, one spark at a time.
+![Tu Tran's GitHub Stats](https://github-readme-stats.vercel.app/api?username=trantuantu2004&show_icons=true&theme=radical)
+
 
 <br>
 Connect with me:
