@@ -4,11 +4,6 @@
 </div>
 
 <p align="center">
-  <a href="https://github.com/ngaiTu29s1">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=ngaiTu29s1&repo=homelab&theme=tokyonight&show_owner=true" />
-  </a>
-</p>
-<p align="center">
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 </p>
 
