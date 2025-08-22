@@ -1,37 +1,40 @@
+# .github/workflows/main.yml
 name: Generate Snake
 
 on:
   schedule:
     # Runs every 6 hours
     - cron: "0 */6 * * *"
+  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-permissions:      # ADD THIS BLOCK
-  contents: write # ADD THIS LINE
+# Grant the workflow permissions to write to the repository
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
+      # Checks out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
+      # Generates the snake animation SVG
       - name: Generate Snake
         uses: Platane/snk@v3
         with:
-          # Your GitHub username
           github_user_name: ${{ github.repository_owner }}
-
-          # The output file for the snake animation
           outputs: |
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      - name: Push to repo
+      # Pushes the generated files to the 'output' branch
+      - name: Push to output branch
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add .
-          git commit -m "generated"
-          git push
+          git checkout -b output
+          git add dist/
+          git commit -m "Generate snake animation"
+          git push -f origin output
