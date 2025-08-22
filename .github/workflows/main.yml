@@ -16,12 +16,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Checks out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - name: Checkout
+      # Checks out your repository
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       # Generates the snake animation SVG
-      - name: Generate Snake
+      - name: Generate Snake Animation
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
@@ -29,12 +29,16 @@ jobs:
             dist/github-contribution-grid-snake.svg
             dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
-      # Pushes the generated files to the 'output' branch
-      - name: Push to output branch
+      # Commits and pushes the generated files to the 'output' branch
+      - name: Commit and Push Changes
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git checkout -b output
           git add dist/
-          git commit -m "Generate snake animation"
-          git push -f origin output
+          # Check if there are any changes to commit
+          if git diff --staged --quiet; then
+            echo "No changes to commit, skipping push."
+          else
+            git commit -m "Generate snake animation"
+            git push -f origin HEAD:output
+          fi
