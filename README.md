@@ -64,8 +64,6 @@ Just a student with a steep learning curve, aiming to build and maintain scalabl
 
 <img width="97%" src="https://github-readme-activity-graph.vercel.app/graph?username=ngaiTu29s1&theme=tokyonight&hide_border=true&hide_title=false&line=87CEEB&point=FFFFFF&area=true&area_color=87CEEB" alt="Activity Graph" />
 
-## My Contribution Graph
-
 ![snake animation](https://github.com/ngaiTu29s1/ngaiTu29s1/blob/main/dist/github-contribution-grid-snake-dark.svg)
 
 
