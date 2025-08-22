@@ -66,7 +66,7 @@ Just a student with a steep learning curve, aiming to build and maintain scalabl
 
 ## My Contribution Graph
 
-![snake animation](https://github.com/ngaiTu29s1/ngaiTu29s1/blob/output/github-contribution-grid-snake.svg)
+![snake animation](https://github.com/ngaiTu29s1/ngaiTu29s1/blob/main/dist/github-contribution-grid-snake-dark.svg)
 
 
 </div>
