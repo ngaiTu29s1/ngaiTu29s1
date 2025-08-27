@@ -7,7 +7,6 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif" />
 </p>
 
-
 ### TL, DR
 
 Just a student with a steep learning curve, aiming to build and maintain scalable, containerized infrastructure as a Cloud Engineer, DevOps, or Backend Developer.
