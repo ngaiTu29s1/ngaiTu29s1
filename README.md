@@ -47,7 +47,7 @@ Just a student with a steep learning curve, aiming to build and maintain scalabl
 
 ---
 
-### 📊 My GitHub Stats
+### 📊 My GitHub Stats ![Profile views](https://komarev.com/ghpvc/?username=ngaiTu29s1&color=blue&style=flat-square)
 
 <div align="center">
 
